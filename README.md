@@ -53,6 +53,3 @@ npx webpack serve
 ## Development Tools
  -  Visual Studio Code
  
-## Personal Details
-- Name: Anjali Sajeevan
-- NUID: 001563277
