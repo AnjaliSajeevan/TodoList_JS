@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/75860174f0.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/> 
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <meta charset = "UTF-8" />
+    <title>
+        Todo List
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/e6b6b99336.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Anjali's Todo List</h1>
-    <form>
-        <input type="text" class="todo-input">
-        <button class="todo-button" type=submit">
-            <i class="fas fa-plus-circle"></i>
-        </button>
-    </form>
-    <div class="todo=container">
-        <ul class="todo-list">
-            </div>
-        </ul>
-    </div>
+    <div>
+        <!-- header section including the title and add part -->
+        <header class=box1>
+            <h1>To Do List</h1><br/>
+           <button class="button1" id="addbutton" ><i class="fa-solid fa-plus"></i> </button> 
+           <!-- form to add the details of the task -->
+        <div id="add" >
+            <br/> 
+            <form action="#" method="POST" id="addElement" class="todo-input">
+                Title:
+                <input  type=text id="title" name="title" required />
+                Description:
+                <input type=text id="description" name="description" required />
+                Date:
+                <input type=date id="date" name="date" required />
+                Time:
+                <input type=time id="time" name="time" required />
+                <button type="submit" class="button2" id="addtask" > Add</button>   
+            </form>
+        </div>
+    </header>
 
-
-
-    <script src="./app.js"></script>
+     <!-- div to add the tasks -->
+        <div class="todo-container">
+            <ul id="list" class="todo-list"></ul>
+        </div>
+    <!-- div to view the details of the task -->
+        <div class="viewContainer" id="viewContainer">
+            <pre><span class="result">Title:</span> <span id="demo1"></span>    <span class="result">Description:</span> <span  id="demo2"> </span>    <span class="result">Date:</span><span id="demo3"></span>    <span class="result">Time:</span> <span id="demo4"></span></pre> 
+        </div>
 </body>
+<!-- <script defer src="app/index.js"></script> -->
 </html>

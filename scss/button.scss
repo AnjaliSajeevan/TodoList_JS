@@ -1,0 +1,56 @@
+// for all the button and icon elements
+@mixin theme() {
+    padding: 10px;
+    background-color: #C19434;
+    border:none;
+    border-radius: 15px;
+    width: 5%;
+  }
+
+.button1 {
+    @include theme;
+
+}
+
+// change colour of the icon
+.fa.fa-plus{
+    color:$color;
+}
+
+
+.button2{
+    @include theme;
+    color:#34421E;
+}
+
+
+.view-btn,
+.complete-btn {
+    background-color: #C19434 ;
+    color:$color;
+    border:none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+.view-btn{
+    background-color: #49274A;
+}
+
+// to not detect the icons
+.fa-check{
+pointer-events: none;
+}
+
+// for strike thru instead of delete
+.completed{
+    text-decoration: line-through;
+    opacity:0.5;
+}
+
+// change colour of the icon
+.fa-solid.fa-plus{
+    color:#34421E;
+    font-size:1rem;
+}

@@ -1,0 +1,91 @@
+@import 'variables';
+// removing al browser alignments
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+    }
+    
+    // for the toggle add button section
+    #add{
+        display:none;
+    }
+    
+    
+    .box2{
+        text-align: center;
+        color:#34421E;
+    }
+    
+    body{
+        background-color: $background_color;
+        color: #F1F1EF;
+    }
+    
+    // The header section details
+    header{
+        font-size: 1.3rem;
+        text-align: center;
+        align-items: center;
+        justify-content:center;
+        background-color: #34421E;
+        padding: 30px;
+        font-family: 'Ink Free', 'Times New Roman', Times, serif;
+    
+    }
+    
+    header div{
+        font-size: 1.1rem;
+        font-family:  'Ink Free','Times New Roman', Times, serif;
+    }
+    
+    // The task container 
+    .todo-container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        padding:20px;
+    }
+    
+    .todo-list{
+        min-width:40%;
+        list-style: none;
+    }
+    
+    // For each task
+    .todo{
+        margin:0.1rem;
+        background-color: #34421E;
+        color:#F8EEE7;
+        font-size: 1.2rem;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+        padding:5px;
+        text-align: center;
+        font-family: 'Ink Free', 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    
+    .todo li{
+        flex:1;
+    }
+    
+    // For the view details section
+    .viewContainer{
+        display:none;
+        color:$color; 
+        background-color: #34421E;
+        justify-content:center;
+        align-items: center;
+        padding:15px;
+        text-align: center;
+        
+    }
+    
+    .result{
+        font-weight: bold;
+    }
+    
+    
